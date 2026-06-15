@@ -98,19 +98,19 @@
             
         </aside>
         
-        <main>
-            <div class="flex">            
-                <div>
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                    <input type="search" name="" id="" placeholder="Search anything...">
+        <main class="space-y-10 flex-1 px-6 py-4">
+            <section class="flex justify-between">            
+                <div class="relative flex items-center">
+                    <i class="fa-solid fa-magnifying-glass absolute right-2 "></i>
+                    <input type="search" name="" id="" placeholder="Search anything..." class="p-2 px-3 border-2 border-gray-400 w-75 rounded-xl">
                 </div>
 
-                <div class="flex ">
+                <div class="flex space-x-5 text-xl items-center gap-4">
                     <i class="fa-solid fa-sun"></i>
                     <i class="fa-regular fa-bell"></i>
 
-                    <div class="flex">
-                        <img src="./src/johnDoe.jpg" alt="" class="w-10 rounded-xl items-center object-contain">
+                    <div class="flex gap-3 items-center">
+                        <img src="./src/johnDoe.jpg" alt="" class="w-10 rounded-full items-center object-contain">
                         <p>John Doe</p>
                         
                         
@@ -118,7 +118,7 @@
                     </div>
 
                 </div>
-            </div>
+            </section>
 
             <section class="flex">
                 <div>
@@ -127,9 +127,9 @@
                 </div>
 
                 <button>
-                    + New Project
+
+                    + New Project               
                 </button>
-                
             </section>
 
 
@@ -179,18 +179,290 @@
                 <div class="flex">
 
                     <div>
-                        <i class="fa-regular fa-file"></i>
+                        <i class="fa-regular fa-file-lines"></i>
                     </div>
 
                     <div>
                         <p>Documents</p>
-                        <h4>89</h4>
+                        <h3>89</h3>
                         <p>Total documents</p>
                     </div>
                     
                 </div>
 
 
+            </section>
+
+            <section class="flex space-x-5 flex-1">
+                <div class="space-y-4 w-100">
+
+                    <div>
+                        <h4>Recent Projects</h4>
+
+                        <button>
+                            View All <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </div>
+                    
+                    <div class="space-y-4 w-100">
+
+                        <div class="flex justify-between"> 
+
+
+                            <div>
+                                W
+                            </div>
+
+                            <div>
+                                <h3>Website Redesign</h3>
+                                <p>Redesigning the corporate website</p>
+                            </div>
+
+                            <div>
+                                In Progress
+                            </div>
+
+                        </div>
+                           
+                        <div class="flex justify-between"> 
+
+
+                            <div>
+                                M
+                            </div>
+
+                            <div>
+                                <h3>Mobile App Development</h3>
+                                <p>Building the new module application</p>
+                            </div>
+
+                            <div>
+                                In Progress
+                            </div>
+
+                        </div>
+                           
+                        <div class="flex gap-10"> 
+
+
+                            <div>
+                                M
+                            </div>
+
+                            <div>
+                                <h3>Marketing Campaign</h3>
+                                <p>Q2 Marketing campaign planning</p>
+                            </div>
+
+                            <div>
+                                Pending
+                            </div>
+
+                        </div>
+                           
+                        <div class="flex justify-between"> 
+
+
+                            <div>
+                                D
+                            </div>
+
+                            <div>
+                                <h3>Design System</h3>
+                                <p>Creating a unified design system</p>
+                            </div>
+
+                            <div>
+                                Completed
+                            </div>
+
+                        </div>
+                           
+                        <div class="flex justify-between"> 
+
+
+                            <div>
+                               R
+                            </div>
+
+                            <div>
+                                <h3>Reasearch Project</h3>
+                                <p>User research and analysis</p>
+                            </div>
+
+                            <div>
+                                In Progress
+                            </div>
+
+                        </div>
+                           
+                    
+                    </div>
+                </div>
+
+              
+                <div class="space-y-4 w-100">
+
+                    <div>
+                        <h4>Recent Activity</h4>
+                        <button>
+                            View All <i class="fa-solid fa-arrow"></i>                  
+                        </button>
+                    </div>
+                    
+                    <div class="space-y-4">
+
+                        <div class="flex space-x-2"> 
+
+                            <div>
+                                <i class="fa-solid fa-users"></i>
+                            </div>
+
+                            <div>
+                                <h3>New user registered</h3>
+                                <p><strong>Jane Smith</strong> joined the platform</p>
+                            </div>
+
+                            <div>
+                                2m ago
+                            </div>
+
+                        </div>
+                           
+                        <div class="flex space-x-2"> 
+
+                            <div>
+                                <i class="fa-regular fa-file-lines"></i>
+                            </div>
+
+                            <div>
+                                <h3>Project updated</h3>
+                                <p>Website Redesign project was updated</p>
+                            </div>
+
+                            <div>
+                                15m ago
+                            </div>
+
+                        </div>
+                           
+                        <div class="flex space-x-2"> 
+
+                            <div>
+                                <i class="fa-regular fa-square-check"></i>
+                            </div>
+
+                            <div>
+                                <h3>Task completed</h3>
+                                <p>Design system task was completed</p>
+                            </div>
+
+                            <div>
+                                1h ago
+                            </div>
+
+                        </div>
+                           
+                        <div class="flex space-x-2"> 
+
+                            <div>
+                                <i class="fa-regular fa-file-lines"></i>
+                            </div>
+
+                            <div>
+                                <h3>Document uploaded</h3>
+                                <p>Design system task was completed</p>
+                            </div>
+
+                            <div>
+                                2h ago
+                            </div>
+
+                        </div>
+                           
+                        <div class="flex space-x-2"> 
+
+                            <div>
+                                <i class="fa-regular fa-comment-dots"></i>
+                            </div>
+
+                            <div>
+                                <h3>New Massage</h3>
+                                <p>Sarah sent you a message</p>
+                            </div>
+
+                            <div>
+                                3h ago
+                            </div>
+
+                        </div>
+                           
+                    
+                    </div>
+                </div>
+
+              
+            </section>
+
+
+            <section>
+                <h3>Quick Actions</h3>
+
+                <div class="flex space-x-6">
+
+                    <div class="flex space-x-3">
+                        <div>
+                            <i class="fa-regular fa-plus"></i>
+                        </div>
+
+                        <div>
+                            <h4>Create Project</h4>
+                            <p>
+                                Start a new project
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex space-x-3">
+                        <div>
+                            <i class="fa-regular fa-circle-check"></i>
+                        </div>
+
+                        <div>
+                            <h4>Add Task</h4>
+                            <p>
+                                Create a new task
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex space-x-3">
+                        <div>
+                            <i class="fa-solid fa-upload"></i>
+                        </div>
+
+                        <div>
+                            <h4>Upload Document</h4>
+                            <p>
+                                Upload new documents
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex space-x-3">
+                        <div>
+                            <i class="fa-solid fa-user-plus"></i>
+                        </div>
+
+                        <div>
+                            <h4>Invite User</h4>
+                            <p>
+                                Invite team members
+                            </p>
+                        </div>
+                    </div>
+                    
+                </div>
             </section>
             
         </main>
