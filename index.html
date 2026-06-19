@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Dashboard</title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
     <link rel="stylesheet" href="./dist/output.css">
 </head>
-<body>
+<body class="dark:bg-gray-950 dark:text-white">
 
-    <div class="min-h-screen flex overflow-hidden overflow-y-hidden">
+    <div class="min-h-screen flex overflow-hidden overflow-y-hidden dark:text-black">
 
-        <aside class="w-72 bg-white border-r border-gray-200 p-3 position-fixed max-h-1/2 overflow-hidden">
+        <aside class="w-72 bg-white border-r border-gray-200 p-3 hidden lg:block dark:bg-gray-950 dark:text-white">
             <div class="flex gap-3">
                 <div class="bg-blue-600 text-white w-9 h-9 rounded-xl flex items-center justify-center font-bold text-lg">
                     B
@@ -59,7 +59,7 @@
                 </a>
             </nav>
 
-            <div class="bg-gray-100 px-6 py-4 mt-20 rounded-lg">
+            <div class="bg-gray-100 px-6 py-4 mt-20 rounded-lg dark:bg-purple-500 text-black">
                 <div>
                     <div class="flex gap-2 items-center">
                         <i class="fa-solid fa-crown text-yellow-300 text-xl"></i>
@@ -98,20 +98,22 @@
             
         </aside>
         
-        <main >
-            <section class="flex justify-between border-b border-gray-200 px-6 py-3">            
-                <div class="relative flex items-center">
+        <main class="flex-1 ">
+            <section class="flex flex-col justify-between gap-10 md:flex-row space-y-5  border-gray-200 px-6 py-3 dark:text-white">            
+                <div class="relative flex items-center m-auto md:m-0">
                     <i class="fa-solid fa-magnifying-glass absolute right-2 cursor-pointer"></i>
                     <input type="search" name="" id="" placeholder="Search anything..." class="p-2 px-3 border-2 border-gray-400 w-75 rounded-xl">
                 </div>
     
-                <div class="flex space-x-5 text-xl items-center gap-4">
-                    <i class="fa-solid fa-sun cursor-pointer"></i>
-                    <i class="fa-regular fa-bell cursor-pointer"></i>
+                <div class="flex justify-between space-x-5 text-2xl items-center">
+                    <div class="space-x-4">
+                        <i class="fa-solid fa-sun cursor-pointer "></i>
+                        <i class="fa-regular fa-bell cursor-pointer"></i>
+                    </div>
     
                     <div class="flex gap-3 items-center">
-                        <img src="./src/johnDoe.jpg" alt="" class="w-10 rounded-full items-center object-contain cursor-progress"> 
-                        <p>John Doe</p>
+                        <img src="./src/johnDoe.jpg" alt="" class="w-10 rounded-full  items-center object-contain cursor-progress "> 
+                        <p class="flex-2 text-center">John Doe</p>
                         
                         
                         <i class="fa-solid fa-angle-down cursor-pointer"></i>
@@ -120,23 +122,23 @@
                 </div>
             </section>
 
-            <div class="space-y-10 flex-1 px-6 py-4 -bg-linear-90 bg-gray-50">
+            <div class="space-y-10 flex-1 px-6 py-4 -bg-linear-90 bg-gray-50 dark:bg-gray-950 dark:text-white">
 
-                <section class="flex justify-between">
-                    <div>
-                        <h3 class="font-bold text-2xl">Dashboard</h3>
+                <section class="flex flex-col gap-8 sm:gap-0 sm:flex-row justify-between ">
+                    <div class="text-xl">
+                        <h3 class="font-bold text-3xl mb-3">Dashboard</h3>
                         <p>Welcome back, John! Here's what's happening today</p>
                     </div>
 
-                    <button class="bg-blue-700 text-white rounded-lg px-4 font-bold">
+                    <button class="bg-blue-700 text-white rounded-lg text-xl py-4 px-4 font-bold">
 
                         + New Project               
                     </button>
                 </section>
 
 
-                <section class="grid grid-cols-4 gap-4">
-                    <div class="flex space-x-4 bg-gray-100 rounded-lg p-5 border-gray-300 border">
+                <section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 py-5 px-2 rounded-lg bg-purple-500 sm:bg-inherit">
+                    <div class="flex space-x-4 bg-gray-100 rounded-lg p-5 border-gray-300 border dark:bg-purple-950 md:m-0 lg:min-w-max">
 
                         <div class=" bg-blue-100 text-center self-center p-5 rounded-lg">
                             <i class="fa-solid fa-users text-blue-700 text-3xl"></i>
@@ -150,7 +152,7 @@
                         
                     </div>
 
-                    <div class="flex space-x-4 bg-gray-100 rounded-lg p-5 border-gray-300 border">
+                    <div class="flex space-x-4 bg-gray-100 rounded-lg p-5 border-gray-300 border dark:bg-purple-950 md:m-0 lg:min-w-max">
 
                         <div class="bg-green-100 self-center p-5 rounded-lg">
                             <i class="fa-regular fa-folder text-green-700 text-3xl"></i>
@@ -164,7 +166,7 @@
                         
                     </div>
 
-                    <div class="flex space-x-4 bg-gray-100 rounded-lg p-5 border-gray-300 border">
+                    <div class="flex space-x-4 bg-gray-100 rounded-lg p-5 border-gray-300 border dark:bg-purple-950 md:m-0">
 
                         <div class="bg-yellow-100 self-center p-5 rounded-lg">
                             <i class="fa-regular fa-square-check text-yellow-600 text-3xl"></i>
@@ -178,7 +180,7 @@
                         
                     </div>
 
-                    <div class="flex space-x-4 bg-gray-100 rounded-lg p-5 border-gray-300 border">
+                    <div class="flex space-x-4 bg-gray-100 rounded-lg p-5 border-gray-300 border dark:bg-purple-950 md:m-0 lg:min-w-max">
 
                         <div class="bg-purple-100 self-center p-5 rounded-lg">
                             <i class="fa-regular fa-file-lines text-purple-600 text-3xl"></i>
@@ -195,13 +197,13 @@
 
                 </section>
 
-                <section class="grid grid-cols-7 gap-5 ">
-                    <div class="space-y-4 border-1 border-gray-300 rounded-xl p-4 col-span-4">
+                <section class="flex flex-col md:grid grid-cols-7 gap-5">
+                    <div class="space-y-4 border border-gray-300 rounded-xl p-4 col-span-4 dark:bg-purple-950 dark:font-semibold">
 
                         <div class="flex justify-between font-bold">
                             <h4 class="self-center text-xl">Recent Projects</h4>
 
-                            <button class="btn border px-2 py-1 rounded-lg border-gray-400">
+                            <button class="btn border px-2 py-1 rounded-lg border-gray- bg-gray-300 dark:text-black">
                                 View All 
                             </button>
                         </div>
@@ -307,11 +309,11 @@
                     </div>
 
                 
-                    <div class="space-y-4 border-1 border-gray-300 rounded-xl p-4 col-span-3">
+                    <div class="space-y-4 border border-gray-300 rounded-xl p-4 col-span-3 dark:bg-purple-950 dark:font-extrabold">
 
                         <div class="flex justify-between font-bold items-center">
                             <h4 class="text-xl self-center">Recent Activity</h4>
-                            <button class="btn border px-2 py-1 rounded-lg border-gray-400">
+                            <button class="btn border px-2 py-1 rounded-lg border-gray-400 bg-gray-300 dark:text-black">
                                 View All               
                             </button>
                         </div>
@@ -411,13 +413,13 @@
                 </section>
 
 
-                <section class="border rounded-xl border-gray-300 shadow p-5">
+                <section class="border rounded-xl border-gray-300 shadow p-5 dark:bg-purple-800 bg-transparent">
                     <h3 class="font-bold text-xl">Quick Actions</h3>
 
-                    <div class="grid grid-cols-4 space-x-6 m-4">
+                    <div class="space-y-3 md:grid grid-cols-4  m-4">
 
-                        <div class="flex space-x-3 border border-gray-200 rounded-lg p-3">
-                            <div class="w-15 h-15 bg-blue-100 text-blue-700 flex justify-center items-center text-5xl rounded-xl">
+                        <div class="flex space-x-3 border border-gray-200 rounded-lg p-3 dark:bg-purple-950 min-w-max items-center max-h-max">
+                            <div class="w-15 h-15 bg-blue-100 text-blue-700 flex justify-center items-center text-5xl rounded-xl ">
                                 <i class="fa-regular fa-plus"></i>
                             </div>
 
@@ -429,7 +431,7 @@
                             </div>
                         </div>
                         
-                        <div class="flex space-x-3 border border-gray-200 rounded-lg p-3">
+                        <div class="flex space-x-3 border border-gray-200 rounded-lg p-3 dark:bg-purple-950 min-w-max items-center max-h-max">
                             <div class="w-15 h-15 bg-green-100 text-green-600 flex justify-center items-center text-2xl rounded-xl">
                                 <i class="fa-regular fa-circle-check"></i>
                             </div>
@@ -442,12 +444,12 @@
                             </div>
                         </div>
                         
-                        <div class="flex space-x-3 border border-gray-200 rounded-lg p-3">
+                        <div class="flex space-x-3 border border-gray-200 rounded-lg p-3 dark:bg-purple-950 min-w-max items-center max-h-max">
                             <div class="w-15 h-15 bg-purple-100 text-purple-600 flex justify-center items-center text-2xl rounded-xl">
                                 <i class="fa-solid fa-upload"></i>
                             </div>
 
-                            <div class="pr-5">
+                            <div>
                                 <h4 class="font-bold">Upload Document</h4>
                                 <p>
                                     Upload new documents
@@ -455,7 +457,7 @@
                             </div>
                         </div>
                         
-                        <div class="flex space-x-3 border border-gray-200 rounded-lg p-3">
+                        <div class="flex space-x-3 border border-gray-200 rounded-lg p-3 dark:bg-purple-950 min-w-max items-center max-h-max">
                             <div class="w-15 h-15 bg-blue-100 text-blue-600 flex justify-center items-center text-2xl rounded-xl">
                                 <i class="fa-solid fa-user-plus"></i>
                             </div>
